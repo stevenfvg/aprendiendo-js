@@ -15,32 +15,32 @@ Ejemplo del Hola Mundo en JavaScript:
 ```javascript
 console.log('Hola Mundo');
 ```
-Ejemplos realizados en el curso:
-
-- 01: [Variables]()
-- 02: [Strings]()
-- 03: [Números]()
-- 04: [Operadores]()
-- 05: [Booleans]()
-- 06: [Objetos]()
-- 07: [Arrays]()
-- 08: [Funciones]()
-- 09: [Estructuras]()
-- 10: [Iteradores]()
-- 11: [ArrayMethods]()
-- 12: [DOM]()
-- 13: [Eventos]()
-- 14: [LocalStorage]()
-- 15: [Fechas]()
-- 16: [Prototypes]()
-- 17: [POO]()
-- 18: [SetsMapsSymbols]()
-- 19: [Modulos]()
-- 20: [IndexedDB]()
-- 21: [Promises]()
-- 22: [APIs]()
-- 23: [FetchAPI]()
-- 24: [AsyncAwait]()
+| Número | Proyecto | Código |
+| --- | --- | --- |
+| `01` | Variables | [Ver](examples/variables.js) |
+| `02` | Strings | [Ver](examples/) |
+| `03` | Números | [Ver](examples/) |
+| `04` | Operadores | [Ver](examples/) |
+| `05` | Booleans | [Ver](examples/) |
+| `06` | Objetos | [Ver](examples/) |
+| `07` | Arrays | [Ver](examples/) |
+| `08` | Funciones | [Ver](examples/) |
+| `09` | Estructuras | [Ver](examples/) |
+| `10` | Iteradores | [Ver](examples/) |
+| `11` | ArrayMethods | [Ver](examples/) |
+| `12` | DOM | [Ver](examples/) |
+| `13` | Eventos | [Ver](examples/) |
+| `14` | LocalStorage | [Ver](examples/) |
+| `15` | Fechas | [Ver](examples/) |
+| `16` | Prototypes | [Ver](examples/) |
+| `17` | POO | [Ver](examples/) |
+| `18` | SetsMapsSymbols | [Ver](examples/) |
+| `19` | Modulos | [Ver](examples/) |
+| `20` | IndexedDB | [Ver](examples/) |
+| `21` | Promises | [Ver](examples/) |
+| `22` | APIs | [Ver](examples/) |
+| `23` | FetchAPI | [Ver](examples/) |
+| `24` | AsyncAwait | [Ver](examples/) |
 
 ## ⌨️ Proyectos con código
 
