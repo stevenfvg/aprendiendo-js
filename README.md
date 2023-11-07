@@ -10,7 +10,7 @@ Curso para aprender **JavaScript** basado en proyectos.
 
 ## 📚 Códigos de ejemplos básicos con ES6
 
-Ejemplo del Hola Mundo en JavaScript:
+Hola Mundo en JavaScript:
 
 ```javascript
 console.log('Hola Mundo');
@@ -21,7 +21,7 @@ console.log('Hola Mundo');
 | --- | --- | --- |
 | `01` | Variables | [Ver](examples/variables.js) |
 | `02` | Strings | [Ver](examples/strings.js) |
-| `03` | Números | [Ver](examples/) |
+| `03` | Números | [Ver](examples/numbers.js) |
 | `04` | Operadores | [Ver](examples/) |
 | `05` | Booleans | [Ver](examples/) |
 | `06` | Objetos | [Ver](examples/) |
