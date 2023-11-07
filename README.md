@@ -15,10 +15,12 @@ Ejemplo del Hola Mundo en JavaScript:
 ```javascript
 console.log('Hola Mundo');
 ```
+**Ejemplos del curso**:
+
 | Número | Proyecto | Código |
 | --- | --- | --- |
 | `01` | Variables | [Ver](examples/variables.js) |
-| `02` | Strings | [Ver](examples/) |
+| `02` | Strings | [Ver](examples/strings.js) |
 | `03` | Números | [Ver](examples/) |
 | `04` | Operadores | [Ver](examples/) |
 | `05` | Booleans | [Ver](examples/) |
