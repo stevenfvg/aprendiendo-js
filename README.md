@@ -23,7 +23,7 @@ console.log('Hola Mundo');
 | `02` | Strings | [Ver](examples/strings.js) |
 | `03` | Números | [Ver](examples/numbers.js) |
 | `04` | Operadores | [Ver](examples/operators.js) |
-| `05` | Booleans | [Ver](examples/) |
+| `05` | Booleans | [Ver](examples/booleans.js) |
 | `06` | Objetos | [Ver](examples/) |
 | `07` | Arrays | [Ver](examples/) |
 | `08` | Funciones | [Ver](examples/) |
