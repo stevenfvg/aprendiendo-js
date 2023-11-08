@@ -22,7 +22,7 @@ console.log('Hola Mundo');
 | `01` | Variables | [Ver](examples/variables.js) |
 | `02` | Strings | [Ver](examples/strings.js) |
 | `03` | Números | [Ver](examples/numbers.js) |
-| `04` | Operadores | [Ver](examples/) |
+| `04` | Operadores | [Ver](examples/operators.js) |
 | `05` | Booleans | [Ver](examples/) |
 | `06` | Objetos | [Ver](examples/) |
 | `07` | Arrays | [Ver](examples/) |
