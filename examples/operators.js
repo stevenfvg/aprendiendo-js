@@ -29,11 +29,11 @@ console.log(numero1 != numero2); // true
 console.log(numero1 !== numero2); // true
 
 // typeof: Verificar el tipo de una variable
-const cadena = "Hola";
+const cadena = 'Hola';
 const numero = 42;
 const booleano = true;
 const arreglo = [1, 2, 3];
-const objeto = { nombre: "Juan" };
+const objeto = { nombre: 'Juan' };
 const nulo = null;
 const noDefinido = undefined;
 
