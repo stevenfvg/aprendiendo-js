@@ -26,8 +26,8 @@ console.log('Hola Mundo');
 | `05` | Booleans | [Ver](examples/booleans.js) |
 | `06` | Objetos | [Ver](examples/objects.js) |
 | `07` | Arrays | [Ver](examples/arrays.js) |
-| `08` | Funciones | [Ver](examples/) |
-| `09` | Estructuras | [Ver](examples/) |
+| `08` | Funciones | [Ver](examples/functions.js) |
+| `09` | Estructuras de control| [Ver](examples/) |
 | `10` | Iteradores | [Ver](examples/) |
 | `11` | ArrayMethods | [Ver](examples/) |
 | `12` | DOM | [Ver](examples/) |
