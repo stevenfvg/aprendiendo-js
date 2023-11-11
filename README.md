@@ -25,7 +25,7 @@ console.log('Hola Mundo');
 | `04` | Operadores | [Ver](examples/operators.js) |
 | `05` | Booleans | [Ver](examples/booleans.js) |
 | `06` | Objetos | [Ver](examples/objects.js) |
-| `07` | Arrays | [Ver](examples/) |
+| `07` | Arrays | [Ver](examples/arrays.js) |
 | `08` | Funciones | [Ver](examples/) |
 | `09` | Estructuras | [Ver](examples/) |
 | `10` | Iteradores | [Ver](examples/) |
