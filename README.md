@@ -28,7 +28,7 @@ console.log('Hola Mundo');
 | `07` | Arrays | [Ver](examples/arrays.js) |
 | `08` | Funciones | [Ver](examples/functions.js) |
 | `09` | Estructuras de control| [Ver](examples/control_structures.js) |
-| `10` | Iteradores | [Ver](examples/) |
+| `10` | Iteradores | [Ver](examples/iterators.js) |
 | `11` | ArrayMethods | [Ver](examples/) |
 | `12` | DOM | [Ver](examples/) |
 | `13` | Eventos | [Ver](examples/) |
