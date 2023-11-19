@@ -31,7 +31,7 @@ console.log('Hola Mundo');
 | `10` | Iteradores | [Ver](examples/iterators.js) |
 | `11` | ArrayMethods | [Ver](examples/arrays_methods.js) |
 | `12` | DOM | [Ver](examples/dom/script.js) |
-| `13` | Eventos | [Ver](examples/) |
+| `13` | Eventos | [Ver](examples/events/script.js) |
 | `14` | LocalStorage | [Ver](examples/) |
 | `15` | Fechas | [Ver](examples/) |
 | `16` | Prototypes | [Ver](examples/) |

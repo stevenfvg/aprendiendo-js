@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eventos en el DOM</title>
+</head>
+
+<body>
+    <h1>Eventos en el DOM</h1>
+
+    <div class="container">
+        <button id="mouseButton">
+            Haz clic aquí
+        </button>
+
+        <input type="text" id="inputText" placeholder="Escribe algo...">
+        <form id="formSubmit">
+            <input type="text" placeholder="Nombre">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div id="scrollDiv">
+            <h4>Desplázate aquí</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam, ipsum vitae eleifend finibus, odio
+                velit ullamcorper velit, eget ultrices libero enim vel felis. Sed at justo vel sapien malesuada auctor.
+            </p>
+            <p>Curabitur at massa in libero vulputate aliquet. Donec in nunc in velit rutrum eleifend. Duis bibendum
+                justo vel orci congue, nec consectetur leo lacinia.</p>
+            <p>Integer consequat tristique massa, id mollis tortor aliquet at. Morbi vitae aliquet velit, sit amet
+                iaculis lectus. Proin vehicula dapibus erat vitae condimentum. Vestibulum ut consequat nisi.</p>
+            <p>Ut nec pharetra ipsum, eu tincidunt ipsum. Proin facilisis varius purus, sed placerat velit interdum vel.
+                Vivamus non venenatis ligula, vel lobortis felis.</p>
+        </div>
+        <div id="eventBubbling">
+            <button id="outerButton">Exterior</button>
+            <button id="innerButton">Interior</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

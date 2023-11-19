@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.container button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container form {
+    display: flex;
+}
+
+.container form input:nth-child(2) {
+    margin-left: 5px;
+}
+
+#scrollDiv {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
