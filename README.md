@@ -30,19 +30,6 @@ console.log('Hola Mundo');
 | `09` | Estructuras de control| [Ver](examples/control_structures.js) |
 | `10` | Iteradores | [Ver](examples/iterators.js) |
 | `11` | ArrayMethods | [Ver](examples/arrays_methods.js) |
-| `12` | DOM | [Ver](examples/dom/js/) |
-| `13` | Eventos | [Ver](examples/events/script.js) |
-| `14` | LocalStorage | [Ver](examples/) |
-| `15` | Fechas | [Ver](examples/) |
-| `16` | Prototypes | [Ver](examples/) |
-| `17` | POO | [Ver](examples/) |
-| `18` | SetsMapsSymbols | [Ver](examples/) |
-| `19` | Modulos | [Ver](examples/) |
-| `20` | IndexedDB | [Ver](examples/) |
-| `21` | Promises | [Ver](examples/) |
-| `22` | APIs | [Ver](examples/) |
-| `23` | FetchAPI | [Ver](examples/) |
-| `24` | AsyncAwait | [Ver](examples/) |
 
 ## ⌨️ Proyectos con código
 
