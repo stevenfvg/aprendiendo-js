@@ -15,9 +15,9 @@ Hola Mundo en JavaScript:
 ```javascript
 console.log('Hola Mundo');
 ```
-**Ejemplos del curso**:
+**Ejemplos básicos del curso**
 
-| Número | Proyecto | Código |
+| Número | Contenido | Código |
 | --- | --- | --- |
 | `01` | Variables | [Ver](examples/variables.js) |
 | `02` | Strings | [Ver](examples/strings.js) |
@@ -30,6 +30,16 @@ console.log('Hola Mundo');
 | `09` | Estructuras de control| [Ver](examples/control_structures.js) |
 | `10` | Iteradores | [Ver](examples/iterators.js) |
 | `11` | ArrayMethods | [Ver](examples/arrays_methods.js) |
+
+**Ejemplos del DOM**
+
+| Número | Contenido | Código |
+| --- | --- | --- |
+| `01` | Obtener elementos del DOM | [Ver](examples/dom/js/getElements.js) |
+| `02` | Modificar elementos del DOM | [Ver](examples/dom/js/modifyElements.js) |
+| `03` | Traversing the DOM | [Ver](examples/dom/js/traversingTheDom.js) |
+| `04` | Eliminar elementos del DOM | [Ver](examples/dom/js/removeElements.js) |
+| `05` | Generar HTML con JavaScript | [Ver](examples/dom/js/generateHTML.js) |
 
 ## ⌨️ Proyectos con código
 
