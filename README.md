@@ -40,6 +40,7 @@ console.log('Hola Mundo');
 | `03` | Traversing the DOM | [Ver](examples/dom/js/traversingTheDom.js) |
 | `04` | Eliminar elementos del DOM | [Ver](examples/dom/js/removeElements.js) |
 | `05` | Generar HTML con JavaScript | [Ver](examples/dom/js/generateHTML.js) |
+| `06` | Eventos | [Ver](examples/events/script.js) |
 
 ## ⌨️ Proyectos con código
 
