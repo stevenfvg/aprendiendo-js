@@ -1,7 +1,7 @@
 // import all css files
-import './assets/css/normalize.css';
-import './assets/css/skeleton.css';
-import './assets/css/styles.css';
+import './public/assets/css/normalize.css';
+import './public/assets/css/skeleton.css';
+import './public/css/styles.css';
 
 import { loadHTMLelements } from './app.js';
 
