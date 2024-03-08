@@ -29,7 +29,25 @@ export function getElementsFromDom(elements) {
             quantity: 1,
         };
 
-        coursesAddedToCart = [...coursesAddedToCart, courseData];
+        // Check if an item already exists in the shopping cart.
+        const courseExistsInCart = coursesAddedToCart.some(
+            course => course.id === courseData.id
+        );
+        if (courseExistsInCart) {
+            // Update the quantity of the item added to the shopping cart.
+            const courses = coursesAddedToCart.map(course => {
+                if (course.id === courseData.id) {
+                    course.quantity++;
+                    return course; // return the updated object.
+                } else {
+                    return course; // returns object without duplicate element.
+                }
+            });
+            coursesAddedToCart = [...courses];
+        } else {
+            coursesAddedToCart = [...coursesAddedToCart, courseData];
+        }
+
         listCoursesInCart();
     }
 
