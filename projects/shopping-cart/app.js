@@ -1,3 +1,3 @@
-export function loadHTMLelements() {
-    // add function code here...
+export function getElementsFromDom(elements) {
+    
 }
