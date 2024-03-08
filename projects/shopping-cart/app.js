@@ -3,6 +3,9 @@ export function getElementsFromDom(elements) {
     const cartContainer = elements[1];
     const emptyCartButton = elements[2];
     const courseList = elements[3];
+    
+    // Array to store courses added to the shopping cart.
+    let coursesAddedToCart = [];
 
     const loadEventListeners = () => {
         courseList.addEventListener('click', addCourseToCart);
@@ -29,7 +32,36 @@ export function getElementsFromDom(elements) {
             quantity: 1,
         };
 
-        console.log(courseData);
+        coursesAddedToCart = [...coursesAddedToCart, courseData];
+        listCoursesInCart();
+    }
+
+    // Lists courses in the shopping cart, removing duplicates and displaying each course's data.
+    function listCoursesInCart() {
+        removeDuplicateCoursesInCart();
+        coursesAddedToCart.forEach(course => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><img src="${course.img}" width="100" /></td>
+                <td>${course.title}</td>
+                <td>${course.price}</td>
+                <td>${course.quantity}</td>
+                <td>
+                    <a href="#" class"borrar-curso" data-id="${course.id}"> X </a> 
+                </td>
+            `;
+
+            // Add course data to the shopping cart container.
+            cartContainer.appendChild(row);
+        });
+    }
+
+    // Removes duplicate courses from the shopping cart.
+    // This is achieved by removing all child elements of the cart container.
+    function removeDuplicateCoursesInCart() {
+        while (cartContainer.firstChild) {
+            cartContainer.removeChild(cartContainer.firstChild);
+        }
     }
 
     loadEventListeners();
