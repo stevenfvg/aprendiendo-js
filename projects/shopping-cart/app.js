@@ -1,9 +1,6 @@
 export function getElementsFromDom(elements) {
-    const cart = elements[0];
-    const cartContainer = elements[1];
-    const emptyCartButton = elements[2];
-    const courseList = elements[3];
-    
+    // Destructuring mapping to extract HTML elements from the document.
+    const [cart, cartContainer, emptyCartButton, courseList] = elements;
     // Array to store courses added to the shopping cart.
     let coursesAddedToCart = [];
 
@@ -40,14 +37,15 @@ export function getElementsFromDom(elements) {
     function listCoursesInCart() {
         removeDuplicateCoursesInCart();
         coursesAddedToCart.forEach(course => {
+            const { img, title, price, quantity, id } = course;
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td><img src="${course.img}" width="100" /></td>
-                <td>${course.title}</td>
-                <td>${course.price}</td>
-                <td>${course.quantity}</td>
+                <td><img src="${img}" width="100" /></td>
+                <td>${title}</td>
+                <td>${price}</td>
+                <td>${quantity}</td>
                 <td>
-                    <a href="#" class"borrar-curso" data-id="${course.id}"> X </a> 
+                    <a href="#" class="borrar-curso" data-id="${id}"> X </a> 
                 </td>
             `;
 
