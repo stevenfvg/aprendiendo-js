@@ -10,6 +10,8 @@ import InfoBar from './layout/infoBar.js';
 import CourseList from './layout/courseList.js';
 import Footer from './layout/footer';
 
+import { getElementsFromDom } from './app.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.querySelector('#app');
     app.innerHTML = `
@@ -19,4 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
         ${CourseList()}
         ${Footer()}
     `;
+
+    const elements = [
+        document.querySelector('#carrito'),
+        document.querySelector('#lista-carrito tbody'),
+        document.querySelector('#vaciar-carrito'),
+        document.querySelector('#lista-cursos'),
+    ];
+
+    getElementsFromDom(elements);
+    
 });
