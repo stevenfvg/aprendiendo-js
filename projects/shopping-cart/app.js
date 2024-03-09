@@ -9,6 +9,13 @@ export function getElementsFromDom(elements) {
         courseList.addEventListener('click', addCourseToCart);
         // Add event listener to the shopping cart to handle clicks and remove courses from the cart.
         cart.addEventListener('click', removeCourseFromCart);
+        // Add event listener to the "Empty Cart" button to handle clicks and remove all courses from the shopping cart.
+        emptyCartButton.addEventListener('click', () => {
+            // Set the coursesAddedToCart array to an empty array to clear the cart.
+            // Then, remove any duplicate courses from the cart.
+            coursesAddedToCart = [];
+            removeDuplicateCoursesInCart();
+        });
     };
 
     // This function is executed when a course is clicked to add to cart.
