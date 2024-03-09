@@ -5,7 +5,10 @@ export function getElementsFromDom(elements) {
     let coursesAddedToCart = [];
 
     const loadEventListeners = () => {
+        // Add event listener to the course list to handle clicks and add courses to the shopping cart.
         courseList.addEventListener('click', addCourseToCart);
+        // Add event listener to the shopping cart to handle clicks and remove courses from the cart.
+        cart.addEventListener('click', removeCourseFromCart);
     };
 
     // This function is executed when a course is clicked to add to cart.
@@ -16,6 +19,23 @@ export function getElementsFromDom(elements) {
             const selectedCourse = e.target.parentElement.parentElement;
             // The getCourseData function is called to get the course data.
             getCourseData(selectedCourse);
+        }
+    }
+
+    // Removes a course from the shopping cart when the delete button is clicked.
+    function removeCourseFromCart(e) {
+        // Check if the clicked element has the class 'borrar-curso'.
+        if (e.target.classList.contains('borrar-curso')) {
+            // Get the unique identifier of the course to be removed.
+            const courseIdentifier = e.target.getAttribute('data-id');
+
+            //Filter out the course with the matching identifier from the coursesAddedToCart array.
+            coursesAddedToCart = coursesAddedToCart.filter(
+                course => course.id !== courseIdentifier
+            );
+
+            // Update the displayed list of courses in the shopping cart
+            listCoursesInCart();
         }
     }
 
