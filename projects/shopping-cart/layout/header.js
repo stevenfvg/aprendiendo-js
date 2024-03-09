@@ -4,12 +4,12 @@ export default function header() {
             <div class="container">
                 <div class="row">
                     <div class="four columns">
-                        <img src="" alt="logo" id="logo">
+                        <img src="../public/assets/img/logo.jpg" alt="logo" id="logo">
                     </div>
                     <div class="two columns u-pull-right">
                         <ul>
                             <li class="submenu">
-                                <img src="" alt="cart icon" id="img-carrito">
+                                <img src="../public/assets/img/cart.png" alt="cart icon" id="img-carrito">
                                 <div id="carrito">
                                     <table id="lista-carrito" class="u-full-width">
                                         <thead>
