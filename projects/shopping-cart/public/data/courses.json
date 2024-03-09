@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "../assets/img/course-cover_1.jpg",
+        "title": "HTML5, CSS3, JavaScript para Principiantes",
+        "price": 15
+    },
+    {
+        "id": 2,
+        "img": "../assets/img/course-cover_2.jpg",
+        "title": "Curso de Comida Vegetariana",
+        "price": 15
+    },
+    {
+        "id": 3,
+        "img": "../assets/img/course-cover_3.jpg",
+        "title": "Guitarra para Principiantes",
+        "price": 15
+    },
+    {
+        "id": 4,
+        "img": "../assets/img/course-cover_4.jpg",
+        "title": "Huerto en tu casa",
+        "price": 15
+    },
+    {
+        "id": 5,
+        "img": "../assets/img/course-cover_5.jpg",
+        "title": "Decoración con productos de tu hogar",
+        "price": 15
+    },
+    {
+        "id": 6,
+        "img": "../assets/img/course-cover_1.jpg",
+        "title": "Diseño Web para Principiantes",
+        "price": 15
+    },
+    {
+        "id": 7,
+        "img": "../assets/img/course-cover_2.jpg",
+        "title": "Comida Mexicana para principiantes",
+        "price": 15
+    },
+    {
+        "id": 8,
+        "img": "../assets/img/course-cover_3.jpg",
+        "title": "Estudio Musical en tu casa",
+        "price": 15
+    },
+    {
+        "id": 9,
+        "img": "../assets/img/course-cover_4.jpg",
+        "title": "Cosecha tus propias frutas y verduras",
+        "price": 15
+    },
+    {
+        "id": 10,
+        "img": "../assets/img/course-cover_5.jpg",
+        "title": "Prepara galletas caseras",
+        "price": 15
+    },
+    {
+        "id": 11,
+        "img": "../assets/img/course-cover_1.jpg",
+        "title": "JavaScript Moderno con ES6",
+        "price": 15
+    },
+    {
+        "id": 12,
+        "img": "../assets/img/course-cover_2.jpg",
+        "title": "100 Recetas de Comida Natural",
+        "price": 15
+    }
+]
