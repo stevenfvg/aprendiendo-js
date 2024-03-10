@@ -78,8 +78,7 @@ export function getElementsFromDom(elements) {
             img: course.querySelector('img').src,
             title: course.querySelector('h4').textContent,
             price: course.querySelector('.precio span').textContent,
-            id: course.querySelector('a').getAttribute('data-id'),
-            quantity: 1,
+            id: course.querySelector('a').getAttribute('data-id')
         };
 
         // Check if an item already exists in the shopping cart.
@@ -90,7 +89,7 @@ export function getElementsFromDom(elements) {
             // Update the quantity of the item added to the shopping cart.
             const courses = coursesAddedToCart.map(course => {
                 if (course.id === courseData.id) {
-                    course.quantity++;
+                    alert('El curso ya se encuentra agregado al carrito');
                     return course; // return the updated object.
                 } else {
                     return course; // returns object without duplicate element.
@@ -108,13 +107,12 @@ export function getElementsFromDom(elements) {
     function listCoursesInCart() {
         removeDuplicateCoursesInCart();
         coursesAddedToCart.forEach(course => {
-            const { img, title, price, quantity, id } = course;
+            const { img, title, price, id } = course;
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td><img src="${img}" width="100" /></td>
                 <td>${title}</td>
                 <td>${price}</td>
-                <td>${quantity}</td>
                 <td>
                     <a href="#" class="borrar-curso" data-id="${id}"> X </a> 
                 </td>

@@ -17,7 +17,6 @@ export default function header() {
                                                 <th>Imagen</th>
                                                 <th>Nombre</th>
                                                 <th>Precio</th>
-                                                <th>Cantidad</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
