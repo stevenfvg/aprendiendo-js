@@ -1,9 +1,35 @@
+import courses from './public/data/courses.json';
+
 export function getElementsFromDom(elements) {
     // Destructuring mapping to extract HTML elements from the document.
     const [cart, cartContainer, emptyCartButton, courseList] = elements;
     // Array to store courses added to the shopping cart.
     let coursesAddedToCart = [];
 
+    // Rendering courses in a <div> element with class 'card'.
+    const showCourses = (element, data) => {
+        const gridContainer = element.children[1];
+        data.forEach(course => {
+            const gridItem = document.createElement('div');
+            gridItem.classList.add('grid-item');
+            gridItem.innerHTML = `
+                <div class="card">
+                    <img src="${course.img}" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>${course.title}</h4>
+                        <p>Juan Pedro</p>
+                        <img src="${course.reputation}">
+                        <p class="precio">$${course.price}  <span class="u-pull-right ">$${course.promoción}</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="${course.id}">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            `;
+
+            gridContainer.appendChild(gridItem);
+        });
+    };
+
+    // Function to load event listeners for interacting with the course list and shopping cart.
     const loadEventListeners = () => {
         // Add event listener to the course list to handle clicks and add courses to the shopping cart.
         courseList.addEventListener('click', addCourseToCart);
@@ -107,5 +133,7 @@ export function getElementsFromDom(elements) {
         }
     }
 
+    // Execution of main functions
+    showCourses(courseList, courses);
     loadEventListeners();
 }
