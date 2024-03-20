@@ -1,12 +1,12 @@
 import courses from './public/data/courses.json';
 
 export function getElementsFromDom(elements) {
-    // Destructuring mapping to extract HTML elements from the document.
+    // Obtención de elementos HTML del DOM.
     const [cart, cartContainer, emptyCartButton, courseList] = elements;
-    // Array to store courses added to the shopping cart.
+    // Array para almacenar cursos agregados al carrito de compras.
     let coursesAddedToCart = [];
 
-    // Rendering courses in a <div> element with class 'card'.
+    // Función que renderiza los cursos en un <div> con la clase "card".
     const showCourses = (element, data) => {
         const gridContainer = element.children[1];
         data.forEach(course => {
@@ -29,50 +29,50 @@ export function getElementsFromDom(elements) {
         });
     };
 
-    // Function to load event listeners for interacting with the course list and shopping cart.
+    // Función para cargar detectores de eventos para interactuar con la lista de cursos y el carrito de compras.
     const loadEventListeners = () => {
-        // Add event listener to the course list to handle clicks and add courses to the shopping cart.
+        // Agregue un detector de eventos a la lista de cursos para manejar los clics y agregar cursos al carrito de compras.
         courseList.addEventListener('click', addCourseToCart);
-        // Add event listener to the shopping cart to handle clicks and remove courses from the cart.
+        // Agregue un detector de eventos al carrito de compras para manejar los clics y eliminar cursos del carrito.
         cart.addEventListener('click', removeCourseFromCart);
-        // Add event listener to the "Empty Cart" button to handle clicks and remove all courses from the shopping cart.
+        // Agregue un detector de eventos al botón "Vaciar carrito" para manejar los clics y eliminar todos los cursos del carrito de compras.
         emptyCartButton.addEventListener('click', () => {
-            // Set the coursesAddedToCart array to an empty array to clear the cart.
-            // Then, remove any duplicate courses from the cart.
+            // Se reacciona un arreglo vacio a la variable coursesAddedToCart.
+            // Luego, elimine los cursos duplicados del carrito.
             coursesAddedToCart = [];
             removeDuplicateCoursesInCart();
         });
     };
 
-    // This function is executed when a course is clicked to add to cart.
+    // Esta función se ejecuta cuando se hace clic en un curso para agregarlo al carrito.
     function addCourseToCart(e) {
         e.preventDefault();
-        // It checks if the clicked element has the 'add-cart' class.
+        // Comprueba si el elemento en el que se hizo clic tiene la clase 'agregar-carrito'.
         if (e.target.classList.contains('agregar-carrito')) {
             const selectedCourse = e.target.parentElement.parentElement;
-            // The getCourseData function is called to get the course data.
+            // Se llama a la función getCourseData para obtener los datos del curso.
             getCourseData(selectedCourse);
         }
     }
 
-    // Removes a course from the shopping cart when the delete button is clicked.
+    // Elimina un curso del carrito de compras cuando se hace clic en el botón Eliminar.
     function removeCourseFromCart(e) {
-        // Check if the clicked element has the class 'borrar-curso'.
+        // Compruebe si el elemento en el que se hizo clic tiene la clase 'borrar-curso'.
         if (e.target.classList.contains('borrar-curso')) {
-            // Get the unique identifier of the course to be removed.
+            // Obtención del identificador único del curso que se eliminará.
             const courseIdentifier = e.target.getAttribute('data-id');
 
-            //Filter out the course with the matching identifier from the coursesAddedToCart array.
+            // Filtra el curso con el identificador coincidente al array cursosAddedToCart.
             coursesAddedToCart = coursesAddedToCart.filter(
                 course => course.id !== courseIdentifier
             );
 
-            // Update the displayed list of courses in the shopping cart
+            // Actualiza la lista de cursos que se muestra en el carrito de compras.
             listCoursesInCart();
         }
     }
 
-    // This function gets the data from the selected course and stores it in an object.
+    // Esta función obtiene los datos del curso seleccionado y los almacena en un objeto.
     function getCourseData(course) {
         const courseData = {
             img: course.querySelector('img').src,
@@ -81,18 +81,18 @@ export function getElementsFromDom(elements) {
             id: course.querySelector('a').getAttribute('data-id')
         };
 
-        // Check if an item already exists in the shopping cart.
+        // Compruebe si ya existe un artículo en el carrito de compras.
         const courseExistsInCart = coursesAddedToCart.some(
             course => course.id === courseData.id
         );
         if (courseExistsInCart) {
-            // Update the quantity of the item added to the shopping cart.
+            // Comprueba si el curso ya existe en el carrito de compras.
             const courses = coursesAddedToCart.map(course => {
                 if (course.id === courseData.id) {
                     alert('El curso ya se encuentra agregado al carrito');
-                    return course; // return the updated object.
+                    return course; // Devolver el objeto actualizado.
                 } else {
-                    return course; // returns object without duplicate element.
+                    return course; // Devuelve un objeto sin elementos duplicados.
                 }
             });
             coursesAddedToCart = [...courses];
@@ -103,7 +103,7 @@ export function getElementsFromDom(elements) {
         listCoursesInCart();
     }
 
-    // Lists courses in the shopping cart, removing duplicates and displaying each course's data.
+    // Enumera los cursos en el carrito de compras, eliminando duplicados y mostrando los datos de cada curso.
     function listCoursesInCart() {
         removeDuplicateCoursesInCart();
         coursesAddedToCart.forEach(course => {
@@ -118,20 +118,19 @@ export function getElementsFromDom(elements) {
                 </td>
             `;
 
-            // Add course data to the shopping cart container.
+            // Agregua los datos del curso al contenedor del carrito de compras.
             cartContainer.appendChild(row);
         });
     }
 
-    // Removes duplicate courses from the shopping cart.
-    // This is achieved by removing all child elements of the cart container.
+    // Elimina cursos duplicados del carrito de compras.
+    // Esto se logra eliminando todos los elementos secundarios del contenedor del carrito.
     function removeDuplicateCoursesInCart() {
         while (cartContainer.firstChild) {
             cartContainer.removeChild(cartContainer.firstChild);
         }
     }
 
-    // Execution of main functions
     showCourses(courseList, courses);
     loadEventListeners();
 }
