@@ -1,9 +1,9 @@
-// import all css files
+// Importación de todos los archivos css
 import './public/assets/css/normalize.css';
 import './public/assets/css/skeleton.css';
 import './public/assets/css/styles.css';
 
-// import layout components
+// Componentes del layout
 import Header from './layout/header.js';
 import Hero from './layout/hero.js';
 import InfoBar from './layout/infoBar.js';
